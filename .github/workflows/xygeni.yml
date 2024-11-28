@@ -28,4 +28,4 @@ jobs:
           token: ${{ secrets.XY_TOKEN_PRO_TRIAL3 }}
           gh_token: ${{ secrets.GH_PAT }}
           #command: scan --include-collaborators --never-fail -n ${{ github.event.repository.name }}-${{ github.ref_name }}
-          command: -cop 'commitResolution:auto' secrets --no-stdin --never-fail -n ${{ github.event.repository.name }}-${{ github.ref_name }} --upload
+          command: -cop 'commitResolution:never' secrets --no-stdin --never-fail -n ${{ github.event.repository.name }}-${{ github.ref_name }} --upload
