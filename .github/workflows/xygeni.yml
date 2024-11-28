@@ -27,4 +27,4 @@ jobs:
           xygeni_url: https://api.xygeni.io
           token: ${{ secrets.XY_TOKEN_PRO_TRIAL3 }}
           gh_token: ${{ secrets.GH_PAT }}
-          command: -cop 'commitResolution:never' secrets --no-stdin --never-fail -n ${{ github.event.repository.name }}-${{ github.ref_name }} --upload
+          command: -cop 'commitResolution:auto' secrets --no-stdin --never-fail -n ${{ github.event.repository.name }}-${{ github.ref_name }} --upload
